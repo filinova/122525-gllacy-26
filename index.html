@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+</head>
+<body>
+<div class="header">
+  <h1 class="visually-hidden">Магазин мороженого GllacyShop</h1>
+  <div class="logo">
+    <img class="logo__img" src="" alt="Логотип GllacyShop" width="154" height="64">
+  </div>
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item main-nav__item--hover">
+        <a class="main-nav__link" href="catalog.html">Каталог</a>
+        <ul class="sub-nav">
+          <li class="sub-nav__item">
+            <a class="sub-nav__link" href="#"><strong>Новинки</strong></a>
+          </li>
+          <li class="sub-nav__item">
+            <a class="sub-nav__link" href="#">Сливочное</a>
+          </li>
+          <li class="sub-nav__item sub-nav__item--hover">
+            <a class="sub-nav__link" href="#">Щербеты</a>
+          </li>
+          <li class="sub-nav__item">
+            <a class="sub-nav__link" href="#">Фруктовый лед</a>
+          </li>
+          <li class="sub-nav__item">
+            <a class="sub-nav__link" href="#">Мелорин</a>
+          </li>
+        </ul>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">Доставка и оплата</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">О Компании</a>
+      </li>
+    </ul>
+    <ul class="user-nav">
+      <li class="user-nav__item user-nav__item--search">
+        <a href="#" class="user-nav__link user-nav__link--search"></a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      </li>
+      <li class="user-nav__item user-nav__item--login">
+        <a href="#" class="user-nav__link user-nav__link--login">Вход</a>
 
-  </body>
+      </li>
+      <li class="user-nav__item user-nav__item--basket">
+        <a href="#" class="user-nav__link user-nav__link--basket">Пусто</a>
+      </li>
+    </ul>
+
+  </nav>
+</div>
+<main>
+  <section class="advantages">
+    <h3 class="advantages__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+    <ul class="advantages__list">
+      <li class="advantages__list-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+      <li class="advantages__list-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
+      <li class="advantages__list-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+      <li class="advantages__list-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+    </ul>
+  </section>
+  <article class="blog">
+    <h3>Новое в нашем блоге</h3>
+    <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+  </article>
+  <section class="rss">
+    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+    <input type="email" value="Электронная почта">
+    <button>Отправить</button>
+  </section>
+</main>
+<footer class="footer">
+  <div class="social">
+    <ul class="social__list">
+      <li class="social__list-item">tw</li>
+      <li class="social__list-item">insta</li>
+      <li class="social__list-item">fb</li>
+      <li class="social__list-item">vk</li>
+    </ul>
+  </div>
+  <div class="about-us">
+    <ul class="about-us__list">
+      <li class="about-us__list-item">Для поставщиков</li>
+      <li class="about-us__list-item">О производстве</li>
+      <li class="about-us__list-item">Наши документы</li>
+      <li class="about-us__list-item">Экологические стандарты</li>
+    </ul>
+  </div>
+  <div class="copyright">
+    <img src="copyright__logo" alt="">
+    <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
+  </div>
+</footer>
+</body>
 </html>
