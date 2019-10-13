@@ -41,15 +41,53 @@
       <ul class="user-nav">
         <li class="user-nav__item user-nav__item--search">
           <a href="#" class="user-nav__link user-nav__link--search"></a>
-
+          <label for="nav-search">
+            <input id="nav-search" type="text" placeholder="Что ищем?">
+          </label>
         </li>
         <li class="user-nav__item user-nav__item--login">
           <a href="#" class="user-nav__link user-nav__link--login">Вход</a>
-
+          <form class="form__login">
+            <p>
+              <label for="login-email"></label>
+              <input id="login-email" type="text" placeholder="Электронная почта">
+            </p>
+            <p>
+              <label for="login-password"></label>
+              <input id="login-password" type="password" value="Пароль">
+            </p>
+            <button class="btn btn__login" type="submit">Вход</button>
+            <a href="#" class="form__link">Забыли пароль?</a>
+            <a href="#" class="form__link">Новая регистрация</a>
+          </form>
         </li>
         <li class="user-nav__item user-nav__item--basket">
           <a href="#" class="user-nav__link user-nav__link--basket">Пусто</a>
         </li>
+        <div class="basket">
+          <table class="basket__list">
+            <tr class="basket__item">
+              <td class="basket--delete">
+                <button class="btn__basket--delete" type="button">Удалить позицию</button>
+              </td>
+              <td class="basket__name-products">Пломбир с апельсиновым джемом</td>
+              <td class="basket__quantity">1,5 &#215; <span class="basket__quantity--grey">200 руб.</span></td>
+              <td class="basket__price">300 руб.</td>
+            </tr>
+            <tr class="basket__item">
+              <td class="basket--delete">
+                <button class="btn__basket--delete" type="button">Удалить позицию</button>
+              </td>
+              <td class="basket__name-products">Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td class="basket__quantity">1,5 &#215; <span class="basket__quantity--grey">300 руб.</span></td>
+              <td class="basket__price">450 руб.</td>
+            </tr>
+          </table>
+          <div class="basket__fin">
+            <span class="basket__fin-price">Итого:750 руб.</span>
+            <button class="btn btn__basket" type="submit">Оформить заказ</button>
+          </div>
+        </div>
       </ul>
       <div class="shop-info">
         <span class="shop-info__worktime">С 10 до 20, ежедневно</span>
@@ -63,13 +101,74 @@
     <nav class="breadcrumbs">
       <ul>
         <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Сливочное</a></li>
+        <li><a>Каталог</a></li>
+        <li><a>Сливочное</a></li>
       </ul>
     </nav>
     <h1 class="page__title">Сливочное мороженое</h1>
     <section class="products">
-      <h2 class="visually-hidden">Ассортимент сливочного мороженого</h2>
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <select>
+            <option value="popular">по популярности</option>
+            <option value="cheap-first">сначала недорогие</option>
+            <option value="expensive-first">сначала дорогие</option>
+            <option value="by-fat">по жирности</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Цена: 100 руб. - 500 руб.</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Жирность:</legend>
+          <ul>
+            <li class="form-filter-option">
+              <input class="form-filter-input-radio" type="radio" name="fat-value" value="0" id="fat-zero">
+              <label for="fat-zero">0%</label>
+            </li>
+            <li class="form-filter-option">
+              <input class="form-filter-input-radio" type="radio" name="fat-value" value="10" id="fat-to-10">
+              <label for="fat-to-10">до 10%</label>
+            </li>
+            <li class="form-filter-option">
+              <input class="form-filter-input-radio" type="radio" name="fat-value" value="30" id="fat-to-30">
+              <label for="fat-to-30">до 30%</label>
+            </li>
+            <li class="form-filter-option">
+              <input class="form-filter-input-radio" type="radio" name="fat-value" value="30-more" id="fat-more-than-30">
+              <label for="fat-more-than-30">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <ul>
+            <li class="form-filter-option">
+              <input class="form-filter-input-checkbox" type="checkbox" name="choko" id="filter-choko" checked>
+              <label for="filter-choko">шоколадные</label>
+            </li>
+            <li class="form-filter-option">
+              <input class="form-filter-input-checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
+              <label for="filter-sugar">сахарные присыпки</label>
+            </li>
+            <li class="form-filter-option">
+              <input class="form-filter-input-checkbox" type="checkbox" name="fruit" id="filter-fruit">
+              <label for="filter-fruit">фрукты</label>
+            </li>
+            <li class="form-filter-option">
+              <input class="form-filter-input-checkbox" type="checkbox" name="syrup" id="filter-syrup">
+              <label for="filter-syrup">сиропы</label>
+            </li>
+            <li class="form-filter-option">
+              <input class="form-filter-input-checkbox" type="checkbox" name="jam" id="filter-jam">
+              <label for="filter-jam">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form-filter-btn" type="submit">Применить</button>
+      </form>
       <ul class="products__list">
         <li class="products__item">
           <img class="products__img" src="img/hit-1.jpg" width="267" height="267" alt="Фото сливочного мороженого с апельсиновым джемом и цитрусовой стружкой">

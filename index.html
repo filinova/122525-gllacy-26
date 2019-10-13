@@ -42,11 +42,25 @@
     <ul class="user-nav">
       <li class="user-nav__item user-nav__item--search">
         <a href="#" class="user-nav__link user-nav__link--search"></a>
-
+          <label for="nav-search">
+            <input id="nav-search" type="text" placeholder="Что ищем?">
+          </label>
       </li>
       <li class="user-nav__item user-nav__item--login">
         <a href="#" class="user-nav__link user-nav__link--login">Вход</a>
-
+        <form class="form__login">
+          <p>
+            <label for="login-email"></label>
+            <input id="login-email" type="text" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label for="login-password"></label>
+            <input id="login-password" type="password" value="Пароль">
+          </p>
+          <button class="btn btn__login" type="submit">Вход</button>
+          <a href="#" class="form__link">Забыли пароль?</a>
+          <a href="#" class="form__link">Новая регистрация</a>
+        </form>
       </li>
       <li class="user-nav__item user-nav__item--basket">
         <a href="#" class="user-nav__link user-nav__link--basket">Пусто</a>
@@ -131,7 +145,7 @@
   </section>
   <section class="map">
     <div class="map__img">
-      <img src="img/map.jpg" alt="Фото карты">
+      <img src="img/map.jpg" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </div>
     <div class="container-contacts">
       <div class="contacts">
@@ -164,5 +178,24 @@
     <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
   </div>
 </footer>
+<div class="feedback">
+  <form action="echo.htmlacademy.ru" method="post" class="feedback-form">
+    <h2 class="feedback__title">Мы обязательно вам ответим!</h2>
+    <p>
+      <label for="feedback-name">Как вас зовут?</label>
+      <input id="feedback-name" type="text" name="name"  placeholder="Как вас зовут?">
+    </p>
+    <p>
+      <label for="feedback-email">Ваша почта для ответа</label>
+      <input id="feedback-email" type="text" name="e-mail" placeholder="Ваша почта для ответа?">
+    </p>
+    <p>
+      <label for="feedback-message">Напишите что-нибудь...</label>
+      <textarea name="message" id="feedback-message" cols="30" rows="10">Напишите что-нибудь...</textarea>
+    </p>
+    <button class="btn btn__feedback" type="submit">Отправить</button>
+    <button type="button">Закрыть</button>
+  </form>
+</div>
 </body>
 </html>
