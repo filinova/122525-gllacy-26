@@ -135,13 +135,16 @@
     </ul>
   </section>
   <article class="blog">
-    <h3>Новое в нашем блоге</h3>
+    <h3 class="blog__title">Новое в нашем блоге</h3>
     <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
   </article>
   <section class="rss">
-    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-    <input type="email" value="Электронная почта">
-    <button>Отправить</button>
+    <p class=""rss__descr>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+    <label for="rss-email" class="visually-hidden">
+      Введите свою почту для рассылки
+      <input id="rss-email" type="email" placeholder="Электронная почта">
+    </label>
+    <button class="btn rss__btn" type="submit">Отправить</button>
   </section>
   <section class="map">
     <div class="map__img">
