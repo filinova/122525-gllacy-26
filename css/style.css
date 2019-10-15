@@ -28,16 +28,15 @@
   url('../fonts/roboto-v20-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.feedback, .user-nav__item--search, .form__login, .basket__list, .basket__fin {
-  display: none;
-}
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   clip: rect(0, 0, 0, 0);
+}
+
+.feedback, .user-nav__item--search, .form__login, .basket__list, .basket__fin {
+  display: none;
 }
 
 body {
@@ -57,10 +56,10 @@ body {
   list-style: none;
 }
 
-.main-nav a, .actions a, .products a, .copyright a, .pagination__item a {
+.main-nav a, .actions a, .products a, .copyright a {
+  color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid #ffffff;
-  color: #ffffff;
 }
 
 .blog, .advantages, .rss {
@@ -73,12 +72,12 @@ body {
   width: 165px;
   height: 45px;
 
+  color: #ffffff;
   background-color: #f16542;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border-radius: 40px;
   text-align: center;
   text-decoration: none;
-  color: #ffffff;
 }
 
 .btn:hover {
@@ -94,19 +93,19 @@ body {
 }
 
 .main-nav__list a:hover {
-  background-color: #f7f6f3;
   color: #333333;
+  background-color: #f7f6f3;
   border-radius: 16px;
   text-decoration: none;
 }
 
 .user-nav input[type="text"], .form__login input[type="email"], input[type="password"], .feedback-form input[type="text"], input[type="email"]  {
+  padding: 10px 13px;
   font: inherit;
   color: #323232;
   background-color: #fff;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
-  padding: 10px 13px;
 }
 
 .actions__title {
@@ -125,6 +124,12 @@ body {
 
 .actions__item--choko {
   background-color: #3a2015;
+}
+
+.actions__btn {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .products__item:hover {
@@ -211,4 +216,7 @@ body {
   text-decoration: none;
 }
 
-
+.pagination__item a {
+  text-decoration: none;
+  color: #ffffff;
+}
