@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="header">
@@ -99,10 +102,10 @@
   </div>
   <main>
     <nav class="breadcrumbs">
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a>Каталог</a></li>
-        <li><a>Сливочное</a></li>
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs-item"><a>Каталог</a></li>
+        <li class="breadcrumbs-item"><a>Сливочное</a></li>
       </ul>
     </nav>
     <h1 class="page__title">Сливочное мороженое</h1>
@@ -123,51 +126,51 @@
         </fieldset>
         <fieldset>
           <legend>Жирность:</legend>
-          <ul>
-            <li class="form-filter-option">
-              <input class="form-filter-input-radio" type="radio" name="fat-value" value="0" id="fat-zero">
+          <ul class="form__filter-list">
+            <li class="form__filter-option">
+              <input class="form__filter-input-radio" type="radio" name="fat-value" value="0" id="fat-zero">
               <label for="fat-zero">0%</label>
             </li>
-            <li class="form-filter-option">
-              <input class="form-filter-input-radio" type="radio" name="fat-value" value="10" id="fat-to-10">
+            <li class="form__filter-option">
+              <input class="form__filter-input-radio" type="radio" name="fat-value" value="10" id="fat-to-10">
               <label for="fat-to-10">до 10%</label>
             </li>
-            <li class="form-filter-option">
-              <input class="form-filter-input-radio" type="radio" name="fat-value" value="30" id="fat-to-30">
+            <li class="form__filter-option">
+              <input class="form__filter-input-radio" type="radio" name="fat-value" value="30" id="fat-to-30">
               <label for="fat-to-30">до 30%</label>
             </li>
-            <li class="form-filter-option">
-              <input class="form-filter-input-radio" type="radio" name="fat-value" value="30-more" id="fat-more-than-30">
+            <li class="form__filter-option">
+              <input class="form__filter-input-radio" type="radio" name="fat-value" value="30-more" id="fat-more-than-30">
               <label for="fat-more-than-30">выше 30%</label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Наполнители:</legend>
-          <ul>
-            <li class="form-filter-option">
-              <input class="form-filter-input-checkbox" type="checkbox" name="choko" id="filter-choko" checked>
+          <ul class="form__filter-list">
+            <li class="form__filter-option">
+              <input class="form__filter-input-checkbox" type="checkbox" name="choko" id="filter-choko" checked>
               <label for="filter-choko">шоколадные</label>
             </li>
-            <li class="form-filter-option">
-              <input class="form-filter-input-checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
+            <li class="form__filter-option">
+              <input class="form__filter-input-checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
               <label for="filter-sugar">сахарные присыпки</label>
             </li>
-            <li class="form-filter-option">
-              <input class="form-filter-input-checkbox" type="checkbox" name="fruit" id="filter-fruit">
+            <li class="form__filter-option">
+              <input class="form__filter-input-checkbox" type="checkbox" name="fruit" id="filter-fruit">
               <label for="filter-fruit">фрукты</label>
             </li>
-            <li class="form-filter-option">
-              <input class="form-filter-input-checkbox" type="checkbox" name="syrup" id="filter-syrup">
+            <li class="form__filter-option">
+              <input class="form__filter-input-checkbox" type="checkbox" name="syrup" id="filter-syrup">
               <label for="filter-syrup">сиропы</label>
             </li>
-            <li class="form-filter-option">
-              <input class="form-filter-input-checkbox" type="checkbox" name="jam" id="filter-jam">
+            <li class="form__filter-option">
+              <input class="form__filter-input-checkbox" type="checkbox" name="jam" id="filter-jam">
               <label for="filter-jam">джемы</label>
             </li>
           </ul>
         </fieldset>
-        <button class="form-filter-btn" type="submit">Применить</button>
+        <button class="form__filter-btn" type="submit">Применить</button>
       </form>
       <ul class="products__list">
         <li class="products__item">

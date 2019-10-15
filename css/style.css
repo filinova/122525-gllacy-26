@@ -1,0 +1,214 @@
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+  url('../fonts/roboto-v20-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/roboto-v20-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+  url('../fonts/roboto-v20-cyrillic_latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/roboto-v20-cyrillic_latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+  url('../fonts/roboto-v20-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/roboto-v20-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.feedback, .user-nav__item--search, .form__login, .basket__list, .basket__fin {
+  display: none;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.main-nav__list, .sub-nav, .user-nav, .products__list, .advantages__list, .social__list, .about-us__list, .pagination, .breadcrumbs-list, .form__filter-list, .pagination__list {
+  list-style: none;
+}
+
+.main-nav a, .actions a, .products a, .copyright a, .pagination__item a {
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.blog, .advantages, .rss {
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+
+  width: 165px;
+  height: 45px;
+
+  background-color: #f16542;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border-radius: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background: linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0px 2px 2px 0px #ac1000;
+}
+
+.btn:active {
+  background: linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px #ac1000;
+}
+
+.main-nav__list a:hover {
+  background-color: #f7f6f3;
+  color: #333333;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.user-nav input[type="text"], .form__login input[type="email"], input[type="password"], .feedback-form input[type="text"], input[type="email"]  {
+  font: inherit;
+  color: #323232;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 10px 13px;
+}
+
+.actions__title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.actions__descr {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.actions__item--berries {
+  background-color: #600001;
+}
+
+.actions__item--choko {
+  background-color: #3a2015;
+}
+
+.products__item:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.products__price {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.products__size {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.products img {
+  border-radius: 140px;
+}
+
+.advantages {
+  color: #323232;
+  background-color: #eadbbd;
+}
+
+.advantages__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.advantages__list {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.blog a {
+  color: #323232;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.rss {
+  background: #f8f7f4;
+  color: #323232;
+  padding: 5px 20px;
+  box-sizing: border-box;
+
+}
+
+.rss input[type="email"] {
+  font: inherit;
+  color: #323232;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 10px 13px;
+  width: 339px;
+}
+
+.contacts {
+  background-color: #fdfefe;
+  color: #323232;
+}
+
+.contacts__address {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__address--bold {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts__link {
+  color: #323232;
+  text-decoration: none;
+}
+
+
