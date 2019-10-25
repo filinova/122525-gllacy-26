@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="container">
 <div class="header">
+  <div class="header-wrapper">
   <h1 class="visually-hidden">Магазин мороженого GllacyShop</h1>
   <div class="logo">
     <img class="logo__img" src="img/logo.svg" alt="Логотип GllacyShop" width="154" height="64">
@@ -42,6 +44,7 @@
         <a class="main-nav__link" href="#">О Компании</a>
       </li>
     </ul>
+    <div class="user-nav-wrapper">
     <ul class="user-nav">
       <li class="user-nav__item user-nav__item--search">
         <a href="#" class="user-nav__link user-nav__link--search"></a>
@@ -69,15 +72,41 @@
         <a href="#" class="user-nav__link user-nav__link--basket">Пусто</a>
       </li>
     </ul>
-    <div class="shop-info">
-      <span class="shop-info__worktime">С 10 до 20, ежедневно</span>
-      <span class="shop-info__phone">
-        <a class="shop-info__link" href="tel:+78124502525">8 812 450-25-25</a>
-      </span>
+
     </div>
   </nav>
+  </div>
+  <div class="shop-info">
+    <span class="shop-info__worktime">С 10 до 20, ежедневно</span>
+    <span class="shop-info__phone">
+        <a class="shop-info__link" href="tel:+78124502525">8 812 450-25-25</a>
+      </span>
+  </div>
+</div>
 </div>
 <main>
+  <div class="container">
+    <section class="promo">
+      <div class="slider-controls">
+        <label for="product-1">Первый</label>
+        <label for="product-2">Второй</label>
+        <label for="product-3">Третий</label>
+      </div>
+      <div class="promo__slider">
+        <div class="promo__block slide" id="slide1">
+          <h2 class="promo__title">Крем-брюле и пломбир с малиновым джемом</h2>
+          <a class="btn promo__btn" href="#">Давайте оба!</a>
+        </div>
+        <div class="promo__block slide" id="slide2">
+          <h2 class="promo__title">Шоколадный пломбир и лимонный сорбет</h2>
+          <a class="btn promo__btn" href="#">Давайте оба!</a>
+        </div>
+        <div class="promo__block slide" id="slide3">
+          <h2 class="promo__title">Пломбир с помадкой и клубничный щербет</h2>
+          <a class="btn promo__btn" href="#">Давайте оба!</a>
+        </div>
+      </div>
+    </section>
   <section class="actions">
     <h2 class="visually-hidden">Актуальные предложения</h2>
     <div class="actions__item actions__item--berries">
@@ -128,7 +157,7 @@
       </li>
     </ul>
   </section>
-  <section class="advantages">
+    <section class="advantages">
     <h3 class="advantages__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
     <ul class="advantages__list">
       <li class="advantages__list-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -137,17 +166,24 @@
       <li class="advantages__list-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
     </ul>
   </section>
-  <article class="blog">
-    <h3 class="blog__title">Новое в нашем блоге</h3>
-    <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-  </article>
-  <section class="rss">
-    <p class="rss__descr">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-    <label for="rss-email" class="">
-      <input id="rss-email" type="email" placeholder="Электронная почта">
-    </label>
-    <button class="btn rss__btn" type="submit">Отправить</button>
-  </section>
+    <div class="blog-rss-wrapper">
+    <article class="blog">
+      <h3 class="blog__title">Новое в нашем блоге</h3>
+      <span class="blog__descr">
+        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+      </span>
+    </article>
+      <section class="rss">
+        <div class="rss-wrapper">
+          <p class="rss__descr">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <label for="rss-email" class="">
+            <input id="rss-email" type="email" placeholder="Электронная почта">
+          </label>
+          <button class="btn rss__btn" type="submit">Отправить</button>
+        </div>
+      </section>
+    </div>
+  </div>
   <section class="map">
     <div class="map__img">
       <img src="img/map.jpg" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -171,12 +207,18 @@
     </ul>
   </div>
   <div class="about-us">
-    <ul class="about-us__list">
-      <li class="about-us__list-item">Для поставщиков</li>
-      <li class="about-us__list-item">О производстве</li>
-      <li class="about-us__list-item">Наши документы</li>
-      <li class="about-us__list-item">Экологические стандарты</li>
-    </ul>
+    <div class="about-us-col-left">
+      <ul class="about-us__list">
+        <li class="about-us__list-item"><a href="#">Для поставщиков</a></li>
+        <li class="about-us__list-item"><a href="#">О производстве</a></li>
+      </ul>
+    </div>
+    <div class="about-us-col-right">
+      <ul class="about-us__list">
+        <li class="about-us__list-item"><a href="#">Наши документы</a></li>
+        <li class="about-us__list-item"><a href="#">Экологические стандарты</a></li>
+      </ul>
+    </div>
   </div>
   <div class="copyright">
     <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="110" height="43">

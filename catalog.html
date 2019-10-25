@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="container">
   <div class="header">
+    <div class="header-wrapper">
     <div class="logo">
       <a href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип GllacyShop" width="154" height="64"></a>
     </div>
@@ -92,13 +94,14 @@
           </div>
         </div>
       </ul>
-      <div class="shop-info">
-        <span class="shop-info__worktime">С 10 до 20, ежедневно</span>
-        <span class="shop-info__phone">
+    </nav>
+    </div>
+    <div class="shop-info">
+      <span class="shop-info__worktime">С 10 до 20, ежедневно</span>
+      <span class="shop-info__phone">
         <a class="shop-info__link" href="tel:+78124502525">8 812 450-25-25</a>
       </span>
-      </div>
-    </nav>
+    </div>
   </div>
   <main>
     <nav class="breadcrumbs">
@@ -331,17 +334,24 @@
     </ul>
   </div>
   <div class="about-us">
-    <ul class="about-us__list">
-      <li class="about-us__list-item">Для поставщиков</li>
-      <li class="about-us__list-item">О производстве</li>
-      <li class="about-us__list-item">Наши документы</li>
-      <li class="about-us__list-item">Экологические стандарты</li>
-    </ul>
+    <div class="about-us-col-left">
+      <ul class="about-us__list">
+        <li class="about-us__list-item"><a href="#">Для поставщиков</a></li>
+        <li class="about-us__list-item"><a href="#">О производстве</a></li>
+      </ul>
+    </div>
+    <div class="about-us-col-right">
+      <ul class="about-us__list">
+        <li class="about-us__list-item"><a href="#">Наши документы</a></li>
+        <li class="about-us__list-item"><a href="#">Экологические стандарты</a></li>
+      </ul>
+    </div>
   </div>
   <div class="copyright">
     <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="110" height="43">
     <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
   </div>
 </footer>
+</div>
 </body>
 </html>
