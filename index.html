@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+<input class="visually-hidden" type="radio" id="product-3" name="toggle">
+<div class="site-wrapper">
 <div class="container">
 <div class="header">
   <div class="header-wrapper">
@@ -18,7 +22,7 @@
   <nav class="main-nav">
     <ul class="main-nav__list">
       <li class="main-nav__item main-nav__item--hover">
-           <a class="main-nav__link" href="catalog.html">Каталог</a>
+           <a class="main-nav__link" href="catalog.html"><span>Каталог</span></a>
         <ul class="sub-nav">
           <li class="sub-nav__item">
             <a class="sub-nav__link" href="#"><strong>Новинки</strong></a>
@@ -38,14 +42,14 @@
         </ul>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" href="#">Доставка и оплата</a>
+        <a class="main-nav__link" href="#"><span>Доставка и оплата</span></a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" href="#">О Компании</a>
+        <a class="main-nav__link" href="#"><span>О Компании</span></a>
       </li>
     </ul>
     <div class="user-nav-wrapper">
-    <ul class="user-nav">
+      <ul class="user-nav">
       <li class="user-nav__item user-nav__item--search">
         <a href="#" class="user-nav__link user-nav__link--search"></a>
           <label for="nav-search">
@@ -72,7 +76,6 @@
         <a href="#" class="user-nav__link user-nav__link--basket">Пусто</a>
       </li>
     </ul>
-
     </div>
   </nav>
   </div>
@@ -125,33 +128,41 @@
     <ul class="products__list">
       <li class="products__item products__item--hit">
         <img class="products__img" src="img/hit-1.jpg" width="267" height="267" alt="Фото сливочного мороженого с апельсиновым джемом и цитрусовой стружкой">
-        <span class="products__price">310&#8381
+        <p class="products__descr">
+          <span class="products__price">310&#8381
           <span class="products__size">/кг</span>
         </span>
+        </p>
         <a class="products__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         <a class="btn products__more" href="#">Быстрый просмотр</a>
       </li>
       <li class="products__item products__item--hit">
         <img class="products__img" src="img/hit-2.jpg" width="267" height="267" alt="Фото сливочно-кофейного мороженого с кусочками шоколада">
-        <span class="products__price">380&#8381
+        <p class="products__descr">
+          <span class="products__price">380&#8381
           <span class="products__size">/кг</span>
         </span>
+        </p>
         <a class="products__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
         <a class="btn products__more" href="#">Быстрый просмотр</a>
       </li>
       <li class="products__item products__item--hit">
         <img class="products__img" src="img/hit-3.jpg" width="267" height="267" alt="Фото сливочно-клубничного мороженого с присыпкой из белого шоколада">
-        <span class="products__price">355&#8381
+        <p class="products__descr">
+          <span class="products__price">355&#8381
           <span class="products__size">/кг</span>
         </span>
+        </p>
         <a class="products__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         <a class="btn products__more" href="#">Быстрый просмотр</a>
       </li>
       <li class="products__item products__item--hit">
         <img class="products__img" src="img/hit-4.jpg" width="267" height="267" alt="Фото сливочного крем-брюле с карамельной подливкой">
-        <span class="products__price">415&#8381
+        <p class="products__descr">
+          <span class="products__price">415&#8381
           <span class="products__size">/кг</span>
         </span>
+        </p>
         <a class="products__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
         <a class="btn products__more" href="#">Быстрый просмотр</a>
       </li>
@@ -243,6 +254,7 @@
     <button class="btn btn__feedback" type="submit">Отправить</button>
     <button type="button">Закрыть</button>
   </form>
+</div>
 </div>
 </body>
 </html>
