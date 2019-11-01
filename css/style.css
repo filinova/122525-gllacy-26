@@ -1364,8 +1364,6 @@ fieldset {
   transform: translate(-50%, -50%);
 }
 
-
-
 .ranges{
   position: relative;
   width: 215px;
@@ -1390,7 +1388,7 @@ fieldset {
   margin-left: 5px;
 }
 
-.bar{
+.bar {
   width: 103px;
   height: 4px;
   background: #fff;
@@ -1434,9 +1432,6 @@ fieldset {
 .form__filter-row-second {
   margin-top: 15px;
 }
-
-
-
 
 .form__filter-list {
   padding: 0;
