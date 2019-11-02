@@ -19,7 +19,7 @@
   <div class="logo">
     <img class="logo__img" src="img/logo.svg" alt="Логотип GllacyShop" width="154" height="64">
   </div>
-  <nav class="main-nav">
+    <nav class="main-nav">
     <ul class="main-nav__list">
       <li class="main-nav__item main-nav__item--hover">
            <a class="main-nav__link" href="catalog.html"><span>Каталог</span></a>
@@ -28,7 +28,7 @@
           <a class="sub-nav__link" href="#"><strong>Новинки</strong></a>
         </li>
           <li class="sub-nav__item">
-            <a class="sub-nav__link" href="#">Сливочное</a>
+            <a class="sub-nav__link" href="catalog.html">Сливочное</a>
           </li>
           <li class="sub-nav__item sub-nav__item--hover">
             <a class="sub-nav__link" href="#">Щербеты</a>
@@ -66,17 +66,17 @@
         </div>
       </li>
       <li class="user-nav__item user-nav__item--login">
-        <a href="#" class="user-nav__link user-nav__link--login">Вход</a>
+        <a href="login.html" class="user-nav__link user-nav__link--login">Вход</a>
         <div class="wrap">
           <div class="form__login-wrapper">
             <form class="form__login">
               <p class="form__login-row">
                 <label class="visually-hidden" for="login-email">Введите почту</label>
-                <input id="login-email" type="email" placeholder="Электронная почта">
+                <input id="login-email" type="email" placeholder="Электронная почта" required>
               </p>
               <p class="form__login-row">
                 <label class="visually-hidden" for="login-password">Введите пароль</label>
-                <input id="login-password" type="password" placeholder="Пароль">
+                <input id="login-password" type="password" placeholder="Пароль" required>
               </p>
               <div class="form__login-links">
                 <p class="links-wrapper">
@@ -94,9 +94,7 @@
       </li>
     </ul>
     </div>
-
   </nav>
-
   </div>
   <div class="shop-info-wrapper">
   <div class="shop-info">
@@ -220,15 +218,18 @@
       <section class="rss">
         <div class="rss-wrapper">
           <p class="rss__descr">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <label for="rss-email" class="">
-            <input id="rss-email" type="email" placeholder="Электронная почта">
-          </label>
-          <button class="btn rss__btn" type="submit">Отправить</button>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label for="rss-email" class="">
+              <input id="rss-email" type="email" placeholder="Электронная почта">
+            </label>
+            <button class="btn rss__btn" type="submit">Отправить</button>
+          </form>
         </div>
       </section>
     </div>
   </div>
   <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2343130146585!2d30.32357599268834!3d59.938528241319744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572724564612!5m2!1sru!2sru" width="100%" height="430px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     <div class="map__img">
       <img src="img/map.jpg" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </div>
@@ -236,7 +237,7 @@
       <div class="contacts">
         <p class="contacts__address">Адрес главного офиса и офлайн-магазина:<span class="contacts__address--bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
         <p class="contacts__phone">Для заказов по телефону: <span class="contacts__address--bold"><a class="contacts__link" href="tel:+78124502525">8 812 450-25-25</a></span>(с 10 до 20 ежедневно)</p>
-        <a href="#" class="btn contacts__btn">Форма обратной связи</a>
+        <a href="form.html" class="btn contacts__btn">Форма обратной связи</a>
       </div>
     </div>
   </section>
@@ -283,27 +284,30 @@
     <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
   </div>
 </footer>
-<div class="feedback feedback-visible">
-  <section class="modal modal-visible">
-    <form class="feedback" action="echo.htmlacademy.ru" method="post">
-      <h2 class="feedback__title">Мы обязательно вам ответим!</h2>
-      <p class="feedback-row">
-        <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
-        <input id="feedback-name" type="text" name="name"  placeholder="Как вас зовут?">
-      </p>
-      <p class="feedback-row">
-        <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
-        <input id="feedback-email" type="email" name="e-mail" placeholder="Ваша почта для ответа?">
-      </p>
-      <p class="feedback-row">
-        <label class="visually-hidden" for="feedback-message">Напишите что-нибудь...</label>
-        <textarea name="message" id="feedback-message" cols="42" rows="5" placeholder="Напишите что-нибудь..."></textarea>
-      </p>
-      <button class="btn btn__feedback" type="submit">Отправить</button>
-      <button class="btn-close" type="button">Закрыть</button>
-    </form>
-  </section>
+  <div class="feedback-visible">
+    <div class="feedback">
+      <section class="modal modal-visible">
+        <form class="feedback" action="echo.htmlacademy.ru" method="post">
+          <h2 class="feedback__title">Мы обязательно вам ответим!</h2>
+          <p class="feedback-row">
+            <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
+            <input id="feedback-name" type="text" name="person"  placeholder="Как вас зовут?">
+          </p>
+          <p class="feedback-row">
+            <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
+            <input id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+          </p>
+          <p class="feedback-row">
+            <label class="visually-hidden" for="feedback-message">Напишите что-нибудь...</label>
+            <textarea name="message" id="feedback-message" cols="42" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+          </p>
+          <button class="btn btn__feedback" type="submit">Отправить</button>
+          <button class="btn-close" type="button">Закрыть</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </div>
-</div>
+<script src="js/script.min.js"></script>
 </body>
 </html>

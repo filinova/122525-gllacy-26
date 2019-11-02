@@ -43,7 +43,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Tahoma', sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -78,7 +78,7 @@ body {
 
 .slider-controls {
   position: absolute;
-  bottom: 52px;
+  bottom: 11px;
   left: 0;
   z-index: 20;
   font-size: 0;
@@ -618,6 +618,10 @@ body {
   padding: 0;
 }
 
+.basket__img img {
+  border-radius: 50%;
+}
+
 .basket--delete {
   width: 15px;
 }
@@ -794,6 +798,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   display: inline-block;
+  vertical-align: middle;
   float: right;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -1099,6 +1104,7 @@ body {
 .blog__descr {
   width: 285px;
   display: inline-block;
+  vertical-align: middle;
   padding-left: 20px;
   padding-bottom: 80px;
 }
@@ -1160,8 +1166,22 @@ body {
 }
 
 .map {
-  position: relative;
   margin-top: 40px;
+  position: relative;
+}
+
+.map iframe {
+  position: relative;
+  z-index: 3;
+}
+
+.map__img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .map__img img {
@@ -1169,12 +1189,19 @@ body {
   margin: 0 auto;
 }
 
+.container-contacts {
+  width: 1146px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
 .contacts {
   background-color: #fdfefe;
   color: #323232;
   position: absolute;
-  bottom: 62px;
-  right: 380px;
+  bottom: 65px;
+  right: 0px;
   padding-top: 29px;
   padding-bottom: 31px;
   padding-left: 25px;
@@ -1254,7 +1281,6 @@ body {
   border-bottom-color: #ffbc9e;
 }
 
-
 .form__filter legend {
   font-size: 14px;
   line-height: 16px;
@@ -1274,7 +1300,7 @@ body {
   margin-bottom: 15px;
 }
 
-fieldset {
+.form-fieldset {
   margin: 0 15px 0 0;
   padding: 0;
   border: none;
@@ -1455,6 +1481,12 @@ fieldset {
 .form__filter-option input {
   display: none;
 }
+
+.form__filter-input-radio:disabled + label,
+.form__filter-input-checkbox:disabled + label {
+  opacity: 0.3;
+}
+
 
 .form__filter-input-radio + label::before {
   content: "";
@@ -1711,6 +1743,46 @@ fieldset {
   margin: 0;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
   display: none;
@@ -1730,6 +1802,15 @@ fieldset {
   z-index: 10;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .feedback {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1738,6 +1819,21 @@ fieldset {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.feedback-visible {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+}
+
+.visible {
+  display: block;
 }
 
 .feedback-row {
